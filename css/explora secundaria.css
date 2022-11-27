@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+}
+a{
+  text-decoration: none;
+  color: #28353B;
+
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  min-height: 50px;
+  background: #7297A8;
+  align-items: center;
+  padding: 10px;
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+  height: 100px;
+  margin-right: 10px;
+}
+
+nav a{
+  font-weight: 600;
+  padding-right: 10px;
+}
+
+nav a:hover{
+  color: #EB4961;
+}
+
+@media (max-width:700px){
+  header{
+    flex-direction: column;
+  }
+  nav{
+    padding: 10px 0px;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+}
+
+.head_container {
+  max-width: 90%;
+  margin: auto;
+}
+/*--------------titulo--------*/
+.home .image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+}
+.home .text {
+  max-width: 80%;
+  color: #28363C;
+  margin: 10% 0 0 5%;
+}
+
+.home h1 {
+  font-size: 90px;
+  font-weight: 1000;
+  text-align: center;
+}
+
+.home p {
+  font-weight: 600;
+  line-height: 25px;
+  font-size: 30px;
+  margin: 0 0 150px 50px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+/*--------------titulo--------*/
+/*--------------book--------*/
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+}
+
+.book {
+  margin-top: 5%;
+  width: 100%;
+  height: 20vh;
+  color: white;
+}
+
+.book .input {
+  background:#28363C;
+  padding: 20px 20px 40px 20px;
+}
+
+.book .search {
+  background:#28363C;
+  padding: 20px;
+}
+
+input{
+  width: 100%;
+  padding: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  outline: none;
+  margin-top: 20px;
+  color: #28363C;
+}
+
+::placeholder {
+  color: #7297A8 ;
+}
+
+.book .search {
+  width: 20%;
+}
+
+.book .search input {
+  background: white;
+  border: none;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 40px;
+  align-items: center;
+}
+/*--------------book--------*/
+/*--------------Buscado--------*/
+.flex1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.room .grid {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.room img {
+  width: 100%;
+  height: 90%;
+  margin-top: 100px;
+}
+
+.room .box {
+  box-shadow: 0 50px 30px 0 rgb(37 46 89/10%);
+}
+
+.room .text {
+  padding: 20px;
+}
+
+.room h3 {
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.room p  ol{
+  font-size: 12px;
+  color: grey;
+}
+
+.room p {
+  font-size: 20px;
+}
+.box a{
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: #F0837E;
+	border: 1px solid #F0837E;
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+}
+.box a:hover{
+	background: #F0837E;
+	color: #fff;
+}
+/*--------------buscado--------*/
+/*--------------footer--------*/
+
+footer h3 {
+  margin-bottom: 20px;
+}
+
+footer li {
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+
+footer li:hover {
+  color: #C1B086;
+  cursor: pointer;
+}
+
+/*--------------footer--------*/
+
+  footer .payment {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .home .text {
+    margin: 10% 0 0 0;
+  }
+
+  .home h1 {
+    font-size: 40px;
+  }
+
+  .about p,
+  .home p {
+    margin: 50px 0 0 0;
+  }
+
+  .wrapper .text {
+    padding: 10px;
+    height: 600px;
+  }
+
+  .heading_top {
+    margin-top: 50px;
+  }
+
+  .heading_top button {
+    display: none;
+  }
+
+  .restaurant .flex {
+    flex-direction: column-reverse;
+  }
+}
